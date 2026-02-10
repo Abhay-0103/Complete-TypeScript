@@ -31,4 +31,6 @@ function createLadki(order: {
 }) {
     console.log("Creating ladki with order:", order);
 }
-   
+
+
+// In TypeScript same javaScript Function are used With defined for typeSaftiy 
