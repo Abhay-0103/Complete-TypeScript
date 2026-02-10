@@ -52,3 +52,47 @@ const items: [name: string, price: number] = ["Laptop", 999.99]
 
 
 // enum
+enum AnimeType {
+    Rommantic,
+    Action,
+    Comedy,
+    AllInOne
+}
+
+const Anime = AnimeType.AllInOne
+
+// auto recement
+enum Status {
+    PENDING = 100,
+    SERVED, // 101
+    CANCELLED // 102
+}
+
+enum ChaiType {
+    MASALA = "Masala",
+    ADRAK = "Adrak",
+    ELACHI = "Elachi"
+}
+
+function makeChai(type: ChaiType) {
+    console.log(`Making: ${type}`);
+}
+
+makeChai(ChaiType.MASALA)
+// console.log(Status.SERVED) // 101
+
+enum RandomEnum {
+    ID = 1,
+    NAME = 'chai'
+}
+
+const enum Sugars {
+    LOW = 1,
+    MEDIUM = 2,
+    HIGH = 3
+}
+
+const s = Sugars.MEDIUM // rare case
+
+let t: [string, number] = ["Luffy", 19]
+t.push("Zoro") // this is possible but it will cause problem in future
