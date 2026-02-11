@@ -94,3 +94,27 @@ class EkChai {
 console.log(EkChai.shopName);
 
 // Abstract class
+
+abstract class Drink {
+    abstract make(): void;
+}
+
+class MyChai extends Drink {
+    make() {
+        console.log("Making Chai");
+    }
+}
+
+// Composition
+
+class Heater {
+    heat(){}
+}
+
+class ChaiMaker{
+    constructor(private heaater: Heater){}
+
+    make() {
+        this.heaater.heat();
+    }
+}
